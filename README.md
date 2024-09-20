@@ -1,6 +1,8 @@
 # Programa para calcular los gastos mensuales
 Este programa funcionara para poder calcular los gastos mensuales de una personas, esto se basa principalmente en los problemas que puede llegar a tener la gente a la hora de gestionar los gastos, ya que a veces estos exceden los limites, por lo que este programa se encargara de ordenar todos los gastos dependiendo en que sector fueron si de entretenimiento, transporte, comida y demás para asi poder ver detalladamente de donde vienen todo esos gastos.
 
+# Sub-competencias a evaluar
+
 ## SICT0301 Evalúa los componentes
 
 ### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa
