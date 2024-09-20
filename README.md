@@ -16,7 +16,7 @@ En este primer avance se tuvo que poder formalizar la idea del programa hacia qu
 ## SICT0301 Evalúa los componentes
 
 ### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa
-En este avance esta sub-competencia se cumple gracias que al estar usando el algoritmo de ordenamiento de la libreria <algorithm>, el cual según lo investigado este hace uso del Introsort, usando el std::sort, asi mismo, teninendo una complejidad promedio de O(n log n).
+- En este avance esta sub-competencia se cumple gracias que al estar usando el algoritmo de ordenamiento de la libreria <algorithm>, el cual según lo investigado este hace uso del Introsort, usando el std::sort, asi mismo, teninendo una complejidad promedio de O(n log n).
 
 ### Hace un análisis de complejidad correcto y completo de todas las estructuras de datos y cada uno de sus usaos en el programa
 
@@ -25,7 +25,7 @@ En este avance esta sub-competencia se cumple gracias que al estar usando el alg
 ## SICT0302 Toma decisiones
 
 ### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente
-En este avance esta sub-competencia se cumple gracias a que después de evaluar todos los algoritmos que se podian llegar a utilizar, me decidi por usar una funcion optimizada de una biblioteca de c++, el cual cumple con la misma funcion que los demás, pero de forma mucho mas eficaz a la hora programar y asi no tener demasiadas complicaciones.
+- En este avance esta sub-competencia se cumple gracias a que después de evaluar todos los algoritmos que se podian llegar a utilizar, me decidi por usar una funcion optimizada de una biblioteca de c++, el cual cumple con la misma funcion que los demás, pero de forma mucho mas eficaz a la hora programar y asi no tener demasiadas complicaciones.
 
 ### Selecciona una estructura de datos adecuada al problema y la usa correctamente
 
