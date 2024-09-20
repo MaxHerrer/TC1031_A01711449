@@ -1,0 +1,6 @@
+Comida 125.00
+Transporte 75.00
+Entretenimiento 250.00
+Comida 56.50
+Transporte 300.00
+Entretenimiento 20.00
