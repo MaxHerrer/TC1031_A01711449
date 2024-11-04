@@ -1,10 +1,14 @@
 # Programa para calcular los gastos mensuales
 Este programa funcionara para poder calcular los gastos mensuales de una personas, esto se basa principalmente en los problemas que puede llegar a tener la gente a la hora de gestionar los gastos, ya que a veces estos exceden los limites, por lo que este programa se encargara de ordenar todos los gastos dependiendo en que sector fueron si de entretenimiento, transporte, comida y demás para asi poder ver detalladamente de donde vienen todo esos gastos.
 
-### Como usar el programa
+# Como usar el programa
 Este programa esta diseñado especialmente para poder ordenar todos los gastos que el usuario tenga durante todo el mes y asi poder este mismo irlos guardando y especificando de donde salen. Asi se puede ayudar a encontrar en que sector se pueden rebajar la cantidad de gastos.
 
-Usando un archivo de texto el usuario podra poner cuales son sus gastos base del mes, con la opcion de ir agregando más gastos durante el mes y asi poder sacar un calculo final.
+Usando un archivo de texto el usuario podra poner cuales son sus gastos base del mes, con la opcion de ir agregando más gastos durante el mes y asi poder sacar un calculo final. Asi mismo, se le mostrara el siguiente menu:
+1. Agregar gasto
+2. Mostrar gastos ordenados
+3. Mostrar total de gastos
+4. Salir
 
 # Avances
 
