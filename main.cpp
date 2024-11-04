@@ -1,27 +1,25 @@
 #include <iostream>
-#include <fstream> 
-#include <vector>
+#include <fstream>
 #include "ordenar.h"
 
-// Cargar los gastos base
-void cargarGastosBase(const std::string& nombreArchivo, std::vector<Gasto>& gastos) {
+void cargarGastosBase(const std::string& nombreArchivo, ListaLigada& lista) {
     std::ifstream archivo(nombreArchivo);
     if (archivo.is_open()) {
         std::string categoria;
         double monto;
         while (archivo >> categoria >> monto) {
-            agregarGasto(gastos, categoria, monto);
+            lista.agregarGasto(categoria, monto);
         }
         archivo.close();
     }
 }
 
 int main() {
-    std::vector<Gasto> gastos;
+    ListaLigada listaGastos;
     int opcion;
     bool continuar = true;
-    
-    cargarGastosBase("gastos.txt", gastos);
+
+    cargarGastosBase("gastos.txt", listaGastos);
 
     while (continuar) {
         std::cout << "1. Agregar gasto\n";
@@ -40,15 +38,15 @@ int main() {
                 std::getline(std::cin, categoria);
                 std::cout << "Introduce el monto del gasto: $";
                 std::cin >> monto;
-                agregarGasto(gastos, categoria, monto);
+                listaGastos.agregarGasto(categoria, monto);
                 break;
             }
             case 2:
-                ordenarGastosPorMonto(gastos);
-                mostrarGastos(gastos);
+                listaGastos.ordenarGastos();
+                listaGastos.mostrarGastos();
                 break;
             case 3: {
-                double total = calcularTotalGastos(gastos);
+                double total = listaGastos.calcularTotal();
                 std::cout << "El total de tus gastos mensuales es: $" << total << std::endl;
                 break;
             }
