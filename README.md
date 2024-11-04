@@ -10,17 +10,39 @@ Usando un archivo de texto el usuario podra poner cuales son sus gastos base del
 3. Mostrar total de gastos
 4. Salir
 
+# Compilar el programa
+- Descargar los Archivos: Asegúrate de tener todos los archivos del programa en un solo repositorio. (es recomendable usar replit)
+
+- Compilar el Programa: Usa el siguiente comando para compilar el archivo main.cpp:
+#### g++ main.cpp
+
+- Ejecutar el Programa: Una vez compilado, ejecuta el programa con el siguiente comando:
+#### ./a.out
+
 # Avances
 
 ## Avance 1
 En este primer avance se tuvo que poder formalizar la idea del programa hacia que lo queremos enfocar y que poder resolver con los temas antes vistos en clase, por lo que considero que el poder organizar tus gastos y no solo eso, sino tambien se organicen de mayor a menor y tambien por categorias ayudaria mucho al usuario al entender sus gastos mensuales.
+
+# Correciones de avances
+
+## Avance 1
+Despues de los comentarios acerca de este primer avance, se corrigieron la siguientes competencias:
+
+- #### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa:
+
+Se realiza un analisis e investigacion mas complejas acerca del algoritmo de ordenamiento utilizado (IntroSort).
+
+- #### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente:
+
+Se realiza una argumentacion mas objetiva y formal, dejando de lado los juicios de valor mostrados.
 
 # Sub-competencias a evaluar
 
 ## SICT0301 Evalúa los componentes
 
 ### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa
-En este avance esta sub-competencia se cumple gracias que al estar usando el algoritmo de ordenamiento de la libreria <algorithm>, el cual según lo investigado este hace uso del Introsort, usando el std::sort, el cual es un algoritmo híbrido que combina Quicksort, Heapsort, e Insertion Sort. El algoritmo fue diseñado para ser eficiente tanto en el caso promedio como en el peor de los casos, adaptándose automáticamente al conjunto de datos de entrada.
+En este avance esta sub-competencia se cumple gracias que al estar usando el algoritmo de ordenamiento de la libreria <algorithm>, el cual según lo investigado este hace uso del IntroSort, usando el std::sort, el cual es un algoritmo híbrido que combina Quicksort, Heapsort, e Insertion Sort. El algoritmo fue diseñado para ser eficiente tanto en el caso promedio como en el peor de los casos, adaptándose automáticamente al conjunto de datos de entrada.
 
 - Mejor caso: O(n \log n)
 
