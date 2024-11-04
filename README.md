@@ -16,7 +16,22 @@ En este primer avance se tuvo que poder formalizar la idea del programa hacia qu
 ## SICT0301 Evalúa los componentes
 
 ### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa
-- En este avance esta sub-competencia se cumple gracias que al estar usando el algoritmo de ordenamiento de la libreria <algorithm>, el cual según lo investigado este hace uso del Introsort, usando el std::sort, asi mismo, teninendo una complejidad promedio de O(n log n).
+En este avance esta sub-competencia se cumple gracias que al estar usando el algoritmo de ordenamiento de la libreria <algorithm>, el cual según lo investigado este hace uso del Introsort, usando el std::sort, el cual es un algoritmo híbrido que combina Quicksort, Heapsort, e Insertion Sort. El algoritmo fue diseñado para ser eficiente tanto en el caso promedio como en el peor de los casos, adaptándose automáticamente al conjunto de datos de entrada.
+
+- Mejor caso: O(n \log n)
+
+En el mejor caso, Invest operará con un tiempo O(n log⁡ n) tiempo. El mejor caso se da cuando el conjunto de datos está prácticamente ordenado, o cuando la forma en que están ordenados favorece a Quicksort.
+
+- Caso promedio: O(n \log n)
+
+En promedio, sorte mantiene un rendimiento de O(n log⁡ n) tiempo con la combinación de Quicksort y Heapsort. Quick sort se utiliza para rangos pequeños en recursión, lo que asegura un rendimiento promedio eficiente.
+
+- Peor caso: O(n \log n)
+
+En casos en los que quicksort puede volverse ineficiente, rápido, o alcanzar O(n2) tiempo, como cuando uno se encuentra con un conjunto de datos que está desbalanceado o casi ordenado, Introsort se autoconmutará a Heapsort ambos garantizan un comportamiento de O(n log ⁡n) tiempo en el peor de los casos.
+
+Si los datos de entrada están en un vector o en una lista dinámica, como una lista sencillamente enlazada, std::sort requiere acceso aleatorio para ser eficiente. std::sort solo es aplicable a estructuras con acceso aleatorio, como std::vector. El ordenamiento tendrá una complejidad de O(n log n) siempre que la estructura de datos sea compatible con un iterador de acceso aleatorio, como en el caso de un vector.
+#
 
 ### Hace un análisis de complejidad correcto y completo de todas las estructuras de datos y cada uno de sus usaos en el programa
 
@@ -25,7 +40,10 @@ En este primer avance se tuvo que poder formalizar la idea del programa hacia qu
 ## SICT0302 Toma decisiones
 
 ### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente
-- En este avance esta sub-competencia se cumple gracias a que después de evaluar todos los algoritmos que se podian llegar a utilizar, me decidi por usar una funcion optimizada de una biblioteca de c++, el cual cumple con la misma funcion que los demás, pero de forma mucho mas eficaz a la hora programar y asi no tener demasiadas complicaciones.
+En este avance esta sub-competencia se cumple gracias a que después de evaluar todos los algoritmos que se podian llegar a utilizar, el IntroSort presenta lo siguiente:
+- Nivel de eficacia: A std::sort se le conoce como un algoritmo con la complejidad máximo de O (n log n); es decir, será ideal para organizar eficazmente los gastos y hacerlo rápidamente.
+- Facilidad de implementacion: std::sort es parte de la biblioteca estándar que garantiza una reducción del tiempo de desarrollo y mínima probabilidad de errores.
+- Adaptabilidad: Como se basa en Introsort, el std::sort ajustará su estrategia de organizar de manera automática, en función de las características de los datos. Por lo tanto, no es necesario realizar ninguna operación adicional.
 
 ### Selecciona una estructura de datos adecuada al problema y la usa correctamente
 
