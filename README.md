@@ -27,6 +27,9 @@ En este primer avance se tuvo que poder formalizar la idea del programa hacia qu
 ## Avance 2
 En este segundo avance se siguio trabajando con este codigo pero ahora se debe agregar una estrutura de datos el cual se adecuado para nuestro programa.
 
+## Avance 3
+En este ultimo avance del proyecto se implementa la escritura de archivos para asi tener la posibilidad de tener gastos base que se tengan y asi poder ir agregando mas gastos y asi calcular el total, despues de esto poderlos guardar en el archivo.
+
 # Correciones de avances
 
 ## Avance 1
@@ -119,6 +122,20 @@ Por qué: La operación de ordenamiento mediante std::sort tiene una complejidad
 Por qué: Al igual que en el caso promedio, la complejidad del algoritmo de ordenamiento se mantiene en O(n log n), sin importar la disposición inicial de los nodos.
 
 ### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa
+Esta sub-competencia se cumple mediante los demás componentes del programa y en este caso esta el de la escritura de archivos como ultimo componente del programa sin contar las funciones de la estructura de datos, el analisis de la escritura de archivos es la siguiente:
+
+#### Cargar Gastos Base (cargarGastosBase)
+- Mejor Caso: O(1)
+
+Por qué: Cuando el archivo de entrada es vacío o contiene solo una línea, ya que la función lee y procesa solo una línea, lo que se traduce en una operación constante.
+
+- Caso Promedio: O(n)
+
+Por qué: Si el archivo tiene varias líneas, se debe leer cada línea y procesarla, lo que implica una operación lineal en función del número de líneas.
+
+- Peor Caso: O(n)
+
+Por qué: Incluso en el peor de los casos, la función debe recorrer todas las líneas del archivo para cargar los gastos en la lista, lo que también resulta en una operación lineal en función del número de líneas.
 
 ## SICT0302 Toma decisiones
 
@@ -155,3 +172,5 @@ Esta sub-competencia se cumple gracias al siguiente método que exite en el prog
 Descripción: Este método permite cargar automáticamente los gastos desde un archivo de texto a la lista ligada. Cada línea del archivo contiene una categoría y un monto, facilitando la incorporación de datos sin necesidad de introducirlos manualmente. Este mecanismo mejora la eficiencia al permitir que el usuario cargue grandes volúmenes de datos de forma rápida y conveniente. Además, al utilizar archivos, se puede mantener un historial de gastos que el usuario puede actualizar fácilmente y revisar en cualquier momento. Esto fomenta una gestión más organizada y estructurada de las finanzas personales.
 
 ### Implementa mecanismos de escritura de archivos para guardar los datos de las estructuras de manera correcta
+
+
