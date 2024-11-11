@@ -33,6 +33,11 @@ public:
         }
     }
 
+    // Método para acceder a la cabeza de la lista
+    Nodo* obtenerCabeza() const {
+        return cabeza;
+    }
+
     // Mostrar los gastos en la lista
     void mostrarGastos() {
         Nodo* temp = cabeza;
