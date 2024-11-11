@@ -137,6 +137,19 @@ Por qué: Si el archivo tiene varias líneas, se debe leer cada línea y procesa
 
 Por qué: Incluso en el peor de los casos, la función debe recorrer todas las líneas del archivo para cargar los gastos en la lista, lo que también resulta en una operación lineal en función del número de líneas.
 
+#### Guardar Gastos En Archivo (guardarGastosEnArchivo)
+- Mejor Caso: O(1)
+
+Por qué: Si la lista está vacía, no hay elementos que escribir. El archivo simplemente se abre y se cierra sin realizar ninguna operación de escritura, lo que resulta en una operación constante.
+
+- Caso Promedio: O(n)
+
+Por qué: Se debe recorrer toda la lista para escribir cada nodo (gasto) en el archivo. Esto resulta en una complejidad lineal en función de la cantidad de elementos en la lista.
+
+- Peor Caso: O(n)
+
+Por qué: Se tiene que recorrer cada uno de los elementos y escribirlos en el archivo. Aunque el tamaño del archivo pueda influir en el tiempo de ejecución, la complejidad sigue siendo O(n), ya que la operación principal es recorrer la lista de gastos.
+
 ## SICT0302 Toma decisiones
 
 ### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente
@@ -172,5 +185,8 @@ Esta sub-competencia se cumple gracias al siguiente método que exite en el prog
 Descripción: Este método permite cargar automáticamente los gastos desde un archivo de texto a la lista ligada. Cada línea del archivo contiene una categoría y un monto, facilitando la incorporación de datos sin necesidad de introducirlos manualmente. Este mecanismo mejora la eficiencia al permitir que el usuario cargue grandes volúmenes de datos de forma rápida y conveniente. Además, al utilizar archivos, se puede mantener un historial de gastos que el usuario puede actualizar fácilmente y revisar en cualquier momento. Esto fomenta una gestión más organizada y estructurada de las finanzas personales.
 
 ### Implementa mecanismos de escritura de archivos para guardar los datos de las estructuras de manera correcta
+Esta sub-competencia se cumple gracias al siguiente método que exite en el programa para poder guardar datos a traves de la lectura de archivos, como lo es el siguiente método:
 
+- Método: guardarGastosEnArchivo()
 
+Descripción: Este método facilita el almacenamiento de los datos de gastos en un archivo de texto. Cada gasto en la lista se escribe en una nueva línea, lo cual permite al usuario conservar un registro actualizado de sus finanzas. Esta función permite además revisar y analizar los datos en sesiones posteriores, sin la necesidad de reingresar los gastos, optimizando la organización de sus datos financieros y asegurando la persistencia de la información.
