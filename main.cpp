@@ -15,7 +15,7 @@ void cargarGastosBase(const std::string& nombreArchivo, ListaLigada& lista) {
     }
 }
 
-// Función para guardar los gastos en un archivo
+// Función para guardar los gastos en un archivo (Ayuda con IA)
 void guardarGastosEnArchivo(const std::string& nombreArchivo, ListaLigada& lista) {
     std::ofstream archivo(nombreArchivo);
     if (archivo.is_open()) {
