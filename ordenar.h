@@ -12,6 +12,11 @@ public:
     Nodo(const std::string& cat, double m) : categoria(cat), monto(m), siguiente(nullptr) {}
 };
 
+// Función de comparación para ordenar los nodos por monto (Ayuda con IA)
+bool compararMontos(Nodo* a, Nodo* b) {
+    return a->monto < b->monto; // Orden ascendente por monto
+}
+
 class ListaLigada {
 private:
     Nodo* cabeza;
@@ -41,14 +46,14 @@ public:
     // Mostrar los gastos en la lista
     void mostrarGastos() {
         Nodo* temp = cabeza;
-        while (temp) {
+        while (temp) { // No sea nullptr
             std::cout << temp->categoria << ": $" << temp->monto << std::endl;
             temp = temp->siguiente;
         }
         std::cout << std::endl;
     }
 
-    // Ordenar los gastos
+    // Ordenar los gastos usando std::sort con una función de comparación (Algunas partes se corrigieron con IA)
     void ordenarGastos() {
         if (!cabeza) return;
 
@@ -58,7 +63,7 @@ public:
         int count = 0;
 
         // Contar nodos
-        while (temp) {
+        while (temp) { // No sea nullptr
             count++;
             temp = temp->siguiente;
         }
@@ -71,10 +76,8 @@ public:
             temp = temp->siguiente;
         }
 
-        // Ordenar el arreglo de nodos por monto usando un lambda
-        std::sort(nodos, nodos + count, [](Nodo* a, Nodo* b) {
-            return a->monto < b->monto; // Ordenar por monto
-        });
+        // Ordenar el arreglo de nodos por monto usando la función compararMontos (ayuda de IA)
+        std::sort(nodos, nodos + count, compararMontos);
 
         // Reconstruir la lista a partir del arreglo ordenado
         cabeza = nodos[0];
@@ -91,7 +94,7 @@ public:
     double calcularTotal() {
         double total = 0;
         Nodo* temp = cabeza;
-        while (temp) {
+        while (temp) { // No sea nullptr
             total += temp->monto;
             temp = temp->siguiente;
         }
