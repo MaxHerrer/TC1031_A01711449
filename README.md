@@ -190,3 +190,14 @@ Esta sub-competencia se cumple gracias al siguiente método que exite en el prog
 - Método: guardarGastosEnArchivo()
 
 Descripción: Este método facilita el almacenamiento de los datos de gastos en un archivo de texto. Cada gasto en la lista se escribe en una nueva línea, lo cual permite al usuario conservar un registro actualizado de sus finanzas. Esta función permite además revisar y analizar los datos en sesiones posteriores, sin la necesidad de reingresar los gastos, optimizando la organización de sus datos financieros y asegurando la persistencia de la información.
+
+# Problemas (video)
+
+## Problema 1
+https://youtu.be/kkwm54trjwg
+
+## Problema 2
+https://youtu.be/ynn_h7i8Chs
+
+## Problema 3
+https://youtu.be/klt1kkfg6a8
